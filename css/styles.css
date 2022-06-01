@@ -3,11 +3,11 @@ Colors used
 
 Background Color (light pink): #FFF0F5
 Text Color (black): #000000
-Primary Color (light purple): #c391f2
+Primary Color (light purple): #6a4b87
 Secondary Color (light blue): #afd3f3
 */
 :root {
-  --primary-color: #c391f2;
+  --primary-color: #6a4b87;
   --secondary-color: #afd3f3;
   --dark-grey: #2b2b2b;
   --background-color: #FFF0F5;
