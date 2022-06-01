@@ -91,7 +91,7 @@ button:hover, button:focus,
 
 .button_secondary {
   background-color: var(--secondary-color);
-  color: var(--text-dark)
+  color: var(--text-dark);
 }
 
 .navigation-list__item--active {
