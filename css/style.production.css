@@ -5,8 +5,28 @@
 * Browsers: last 4 version
 */
 
+/*
+Colors used
+
+Background Color (light pink): #FFF0F5
+Text Color (black): #000000
+Primary Color (light purple): #6a4b87
+Secondary Color (light blue): #afd3f3
+*/
+:root {
+  --primary-color: #6a4b87;
+  --secondary-color: #afd3f3;
+  --dark-grey: #2b2b2b;
+  --background-color: #FFF0F5;
+  --primary-color-darker: darken(--primary-color, 20%);
+  --primary-color-lighter: lighten(--primary-color, 10%);
+  --text-light: #fff;
+  --text-dark: #000;
+  --header-font-weight: 700px;
+  }
+
 body {
-  background-color: #FFF0F5;
+  background-color: var(--background-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -17,26 +37,26 @@ body {
 
 h1 {
   font-size: 30px;
-  font-weight: 700px;
+  font-weight: var(--header-font-weight);
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 700px;
+  font-weight: var(--header-font-weight);
 }
 
 h3 {
   font-size: 18px;
-  font-weight: 700px;
+  font-weight: var(--header-font-weight);
 }
 
 a {
-  color: #c391f2;
+  color: var(--primary-color);
 }
 
 a:visited {
   /*visited link*/
-  color: darken(--primary-color, 20%);
+  color: var(--primary-color-darker);
 }
 
 a:hover, a:focus {
@@ -46,29 +66,10 @@ a:hover, a:focus {
 
 a:active {
   /* selected link*/
-  color: lighten(--primary-color, 10%);
+  color: var(--primary-color-lighter);
 }
 
-button {
-  /* overwrites browser defaults and resets border */
-  border: none;
-  /* takes font form outer container */
-  display: inline-block;
-  font-family: inherit;
-  /* styles background color, font color, and text decoration (underline etc) of button */
-  background-color: #c391f2;
-  color: #fff;
-  text-decoration: none;
-  /*adds spacing to button */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-}
-
+button,
 .button {
   /* overwrites browser defaults and resets border */
   border: none;
@@ -76,8 +77,8 @@ button {
   display: inline-block;
   font-family: inherit;
   /* styles background color, font color, and text decoration (underline etc) of button */
-  background-color: #c391f2;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-light);
   text-decoration: none;
   /*adds spacing to button */
   padding: 10px;
@@ -98,8 +99,8 @@ button:hover, button:focus,
 }
 
 .button_secondary {
-  background-color: #afd3f3;
-  color: #000
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
 }
 
 .navigation-list__item--active {
@@ -180,7 +181,7 @@ button:hover, button:focus,
 }
 
 .project-list__item {
-  background-color: #afd3f3;
+  background-color: var(--secondary-color);
   width: auto;
   min-height: auto;
   margin: 0;
@@ -208,7 +209,7 @@ button:hover, button:focus,
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 0;
-}
+  }
 
   .project-list__item last-child {
     -ms-grid-columns: 3 / 3;
