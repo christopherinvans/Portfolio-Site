@@ -303,3 +303,7 @@ button:focus,
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.work-header {
+  align: center;
+}
