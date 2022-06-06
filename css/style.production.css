@@ -313,7 +313,8 @@ button:focus,
   font-weight: var(--header-font-weight);
 }
 
-.contact-form {
+.contact-form,
+.my-contact-info {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
