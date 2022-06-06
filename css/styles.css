@@ -194,6 +194,7 @@ button:focus,
   .grid {
     grid-gap: 10px;
   }
+  
   .project-list__item
   last-child {
     grid-column: auto / auto;
