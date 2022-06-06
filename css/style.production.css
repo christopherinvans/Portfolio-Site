@@ -12,27 +12,24 @@ Background Color (light pink): #FFF0F5
 Text Color (black): #000000
 Primary Color (light purple): #6a4b87
 Secondary Color (light blue): #afd3f3
-*/
-:root {
+*/:root {
   --primary-color: #6a4b87;
   --secondary-color: #afd3f3;
   --dark-grey: #2b2b2b;
-  --background-color: #FFF0F5;
+  --background-color: #fff0f5;
   --primary-color-darker: darken(--primary-color, 20%);
   --primary-color-lighter: lighten(--primary-color, 10%);
   --text-light: #fff;
   --text-dark: #000;
   --header-font-weight: 700px;
-  }
+}
 
 body {
   background-color: var(--background-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  /*Sets font size to 16 px */
   line-height: 1.6;
-  /*Sets line-height to 1.6*/
 }
 
 h1 {
@@ -55,46 +52,39 @@ a {
 }
 
 a:visited {
-  /*visited link*/
   color: var(--primary-color-darker);
 }
 
-a:hover, a:focus {
-  /*No underlining when hovering over a link */
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
 a:active {
-  /* selected link*/
   color: var(--primary-color-lighter);
 }
 
 button,
 .button {
-  /* overwrites browser defaults and resets border */
   border: none;
-  /* takes font form outer container */
   display: inline-block;
   font-family: inherit;
-  /* styles background color, font color, and text decoration (underline etc) of button */
   background-color: var(--primary-color);
   color: var(--text-light);
   text-decoration: none;
-  /*adds spacing to button */
   padding: 10px;
   border-radius: 3px;
-  /* gives button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus,
-.button:hover, .button:focus {
-  /* lets mouse appear as hand when hovering over button*/
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
-  /* reduces opacity of button to 80%*/
   opacity: 0.8;
 }
 
@@ -105,7 +95,6 @@ button:hover, button:focus,
 
 .navigation-list__item--active {
   text-decoration: none;
-  /* removes underline from active nav item */
 }
 
 .profile__portrait {
@@ -139,11 +128,11 @@ button:hover, button:focus,
 }
 
 .page-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
 }
 
 .page-header__item {
@@ -194,12 +183,10 @@ button:hover, button:focus,
   grid-row: 1 / 1;
 }
 
-/* start grid fallback */
 .project-list__item {
   display: inline-block;
   width: 1fr;
 }
-/* end grid fallback */
 
 @supports (display: grid) {
   .project-list {
@@ -219,29 +206,27 @@ button:hover, button:focus,
     grid-row: 1 / 3;
   }
 
-  @media all and (min-width: 500px) and (max-width: 750px){
-  .project-list {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-    /* for screens between 500-750px, two columns */
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .project-list {
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
-}
 
-@media all and (max-width: 500px){
+@media all and (max-width: 500px) {
   .project-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    /* for screens 500 px or smaller, display as one column */
   }
 }
 
-@media all and (max-width: 750px){
-  /*shared code*/
-  .grid{
+@media all and (max-width: 750px) {
+  .grid {
     grid-gap: 10px;
   }
-  .project-list__item last-child {
+  .project-list__item
+  last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
@@ -250,7 +235,8 @@ button:hover, button:focus,
   }
 }
 
-.page-bio, .skills-table {
+.page-bio,
+.skills-table {
   text-align: center;
   margin: auto;
   margin-left: auto;
@@ -294,22 +280,22 @@ button:hover, button:focus,
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px)
+            transform: translate(446px, 48px);
   }
   to {
-    -webkit-transform: translate(100px,48px);
-            transform: translate(100px,48px)
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px)
+            transform: translate(446px, 48px);
   }
   to {
-    -webkit-transform: translate(100px,48px);
-            transform: translate(100px,48px)
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
