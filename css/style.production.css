@@ -306,6 +306,9 @@ button:focus,
 
 .work-header {
   text-align: center;
-  margin left: auto;
-  margin right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: bold;
+  font-size: 30;
+  font-weight: var(--header-font-weight);
 }
