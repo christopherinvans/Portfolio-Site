@@ -43,23 +43,23 @@
       Skype: <a href="skype:live:.cid.fd4dab9a41167388?chat">Let's chat!</a>
   </div>
   <div class="contact-form">
-  <form action="#" method="post" id="contact-form">
+  <form action="results.html" method="GET" id="contact-form">
     <p>
     <label class="standard-label" for="contact-email">E-mail: </label>
-    <input type="email" id="contact-email" required>
+    <input type="email" id="contact-email" name="contact-email" required>
     </p>
 
     <p>
     <label class="standard-label" for="contact-telephone">Telephone: </label>
-    <input type="tel" id="contact-telephone">
+    <input type="tel" id="contact-telephone" name="contact-telephone">
     </p>
 
     <p>
     <label class="standard-label" for="contact-message">Message: </label>
-    <textarea maxlength="240" id="contact-message" required></textarea>
+    <textarea maxlength="240" id="contact-message" name="contact-message" required></textarea>
     </p>
 
-    <input type="submit" id="submit" value="Submit Message" formenctype="multipart/form-data">
+    <input type="submit" id="submit" value="Submit Message" name="submit">
   </form>
   </div>
   <br>
