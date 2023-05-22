@@ -151,7 +151,7 @@ button:focus,
   background-color: var(--secondary-color);
   width: auto;
   min-height: auto;
-  margin: 0;
+  margin: 10px;
 }
 
 .project-list__item first-child {
