@@ -319,6 +319,7 @@ button:focus,
 }
 
 .my-contact-info {
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
