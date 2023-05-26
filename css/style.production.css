@@ -76,6 +76,7 @@ button,
   color: var(--text-light);
   text-decoration: none;
   padding: 10px;
+  margin: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s opacity;
@@ -349,5 +350,7 @@ button:focus,
 
 .about-page {
   background-color: var(--secondary-color);
-  max-width: 600px;
+  max-width: 800px;
+  justify-content: center;
+  align-content: center;
 }
