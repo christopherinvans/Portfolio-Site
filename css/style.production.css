@@ -318,6 +318,8 @@ button:focus,
 }
 
 .my-contact-info {
+  display: flex;
+  flex-direction: row;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -328,4 +330,9 @@ button:focus,
   margin-top: 5px;
   height: 350px;
   width: auto;
+}
+
+.icon-img {
+  height: 200px;
+  margin: 5px;
 }
